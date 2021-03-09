@@ -1,0 +1,1 @@
+AuditLogs | where OperationName == "Update user" and (TargetResources[0].userPrincipalName in ("BreakGlassADM1@ TENANTNAME.onmicrosoft.com") or TargetResources[0].userPrincipalName in ("BreakGlassADM2@ TENANTNAME.onmicrosoft.com")) | project TimeGenerated, InitiatedBy.user.userPrincipalName, TargetResources[0].userPrincipalName, TargetResources[0].modifiedProperties 

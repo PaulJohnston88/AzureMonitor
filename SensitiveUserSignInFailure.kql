@@ -1,0 +1,1 @@
+SigninLogs | where ResultType != 0 and (UserPrincipalName == “BreakGlassADM1@TENANTNAME.onmicrosoft.com” or UserPrincipalName == “BreakGlassADM2@TENANTNAME.onmicrosoft.com”) 

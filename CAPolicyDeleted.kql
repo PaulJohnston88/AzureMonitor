@@ -1,0 +1,1 @@
+AuditLogs | where ActivityDisplayName == "Delete policy" | project ActivityDateTime, ActivityDisplayName, TargetResources[0].displayName, InitiatedBy.user.userPrincipalName
